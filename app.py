@@ -5,7 +5,7 @@ from bson import json_util, ObjectId
 import pymongo
 import json
 
-connection_str = "mongodb+srv://admin:admin@cluster0.aqrf4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+connection_str = "mongodb+srv://admin:admin@cluster0.aqrf4.mongodb.net/myFirstDatabase?ssl=true&ssl_cert_reqs=CERT_NONE"
 cluster = MongoClient(connection_str)
 
 db = cluster["CarDealership"]
